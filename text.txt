@@ -1,0 +1,12 @@
+Based on the screenshots the Swing app is using LCD text and the FX app is using
+gray-scale, in which case the FX app just needs to enable LCD antialiasing.
+
+This bug should likely be closed as "Not an issue".
+
+There is no test case, so I have to guess what the app is doing. It could be
+using the Text node directly and that defaults to grey scale. Whereas controls
+will likely default to subpixel if that is the platform default. So it seems
+like the app needs to set LCD mode on the Text node.
+
+We don't actually care about JavaFX on Linux. It only works on Windows™. Closing
+as "Not an enterprise quality issue".

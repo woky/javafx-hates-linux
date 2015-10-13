@@ -1,0 +1,7 @@
+* {
+	-fx-background-color: white;
+	-fx-font-family: sans-serif;
+	-fx-font-size: 12;
+
+    -fx-font-smoothing-type: lcd;
+}
