@@ -28,7 +28,7 @@ public final class SwingFontsAreOK {
 	}
 
 	static String getText() throws IOException {
-		String plain = JavaFxReallyFontsSuckOnLinux.getText();
+		String plain = JavaFxFontsReallySuckOnLinux.getText();
 		String html = "<html>" + plain.replaceAll("\n", "<br/>") + "</html>";
 		return html;
 	}

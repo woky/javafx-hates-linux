@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.stream.Collectors;
 
-public class JavaFxReallyFontsSuckOnLinux extends Application {
+public class JavaFxFontsReallySuckOnLinux extends Application {
 
 	public static void main(String[] args) {
 		launch(args);
@@ -165,7 +165,7 @@ public class JavaFxReallyFontsSuckOnLinux extends Application {
 
 	static String getText() throws IOException {
 		try (BufferedReader reader = new BufferedReader(new InputStreamReader(
-				JavaFxReallyFontsSuckOnLinux.class.getResourceAsStream("text.txt"), "UTF-8"))) {
+				JavaFxFontsReallySuckOnLinux.class.getResourceAsStream("text.txt"), "UTF-8"))) {
 			return reader.lines().collect(Collectors.joining("\n"));
 		}
 	}
